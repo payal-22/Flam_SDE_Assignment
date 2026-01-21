@@ -1,7 +1,7 @@
 import { useEffect, useRef, useState } from 'react';
 import io from 'socket.io-client';
 
-const SERVER_URL = 'http://localhost:5000';
+const SERVER_URL = 'https://flam-sde-assignment.onrender.com';
 
 export const useWebSocket = (roomId) => {
   const socketRef = useRef(null);
@@ -113,4 +113,5 @@ export const useWebSocket = (roomId) => {
     saveCanvasState,
     loadCanvasState
   };
+
 };
